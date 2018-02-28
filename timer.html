@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>timer</title>
+	<script type="text/javascript">
+		
+
+var myvar=setInterval(function(){myTimer(),1000});
+var mycounter=setInterval(function(){counter(),1000});
+var x=0;
+function myTimer(){
+	var d=new Date();
+	document.getElementById("timer").innerHTML=d.toLocaleTimeString();
+
+}
+
+
+function counter(){
+	
+	document.getElementById("counter").innerHTML=x;
+x++;
+}
+
+
+
+	</script>
+</head>
+<body>
+<p id="timer"></p>
+<p id="counter"></p>
+</body>
+</html>
